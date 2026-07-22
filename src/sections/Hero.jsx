@@ -1,4 +1,3 @@
-import { shoes, statistics } from "../constants";
 import { arrowRight } from "../assets/icons";
 
 const Hero = () => {
