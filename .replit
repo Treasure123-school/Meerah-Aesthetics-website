@@ -30,5 +30,5 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Meerah-Aesthetics-website && npm run dev"
+args = "npm run dev"
 waitForPort = 5000
