@@ -19,6 +19,7 @@
   --color-slate-gray: #6d6d6d;
   --color-pale-blue: #f5f6ff;
   --color-white-400: rgba(255, 255, 255, 0.8);
+  --breakpoint-wide: 1440px;
 }
 
 @layer components {
@@ -55,15 +56,20 @@
 
 @layer utilities {
   .padding {
-    padding: 3rem 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .padding-x {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .padding-y {
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .padding-l {
@@ -91,15 +97,20 @@
 
   @media (min-width: 640px) {
     .padding {
-      padding: 6rem 4rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
 
     .padding-x {
-      padding: 0 4rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
 
     .padding-y {
-      padding: 6rem 0;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
     }
 
     .padding-l {
