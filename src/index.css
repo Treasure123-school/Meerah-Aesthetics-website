@@ -15,9 +15,9 @@
 @theme {
   --font-montserrat: "Montserrat", sans-serif;
   --font-palanquin: "Palanquin", sans-serif;
-  --color-coral-red: #FF6452;
-  --color-slate-gray: #6D6D6D;
-  --color-pale-blue: #F5F6FF;
+  --color-coral-red: #ff6452;
+  --color-slate-gray: #6d6d6d;
+  --color-pale-blue: #f5f6ff;
   --color-white-400: rgba(255, 255, 255, 0.8);
 }
 
@@ -88,34 +88,34 @@
     font-size: 1.125rem;
     line-height: 1.75rem;
   }
-}
 
-@media (min-width: 640px) {
-  .padding {
-    padding: 6rem 4rem;
-  }
+  @media (min-width: 640px) {
+    .padding {
+      padding: 6rem 4rem;
+    }
 
-  .padding-x {
-    padding: 0 4rem;
-  }
+    .padding-x {
+      padding: 0 4rem;
+    }
 
-  .padding-y {
-    padding: 6rem 0;
-  }
+    .padding-y {
+      padding: 6rem 0;
+    }
 
-  .padding-l {
-    padding-left: 4rem;
-  }
+    .padding-l {
+      padding-left: 4rem;
+    }
 
-  .padding-r {
-    padding-right: 4rem;
-  }
+    .padding-r {
+      padding-right: 4rem;
+    }
 
-  .padding-t {
-    padding-top: 6rem;
-  }
+    .padding-t {
+      padding-top: 6rem;
+    }
 
-  .padding-b {
-    padding-bottom: 6rem;
+    .padding-b {
+      padding-bottom: 6rem;
+    }
   }
 }
