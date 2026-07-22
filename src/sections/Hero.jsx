@@ -1,4 +1,6 @@
+import Button from "../components/Button"
 import { arrowRight } from "../assets/icons";
+import { statistics } from "../constants";
 
 const Hero = () => {
 	return (
