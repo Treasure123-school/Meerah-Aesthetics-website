@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap");
 
 @import "tailwindcss";
 
@@ -35,7 +34,8 @@
     color: var(--color-slate-gray);
     padding-left: 1.25rem;
     outline: none;
-    border-width: 1px;
+    /* FIX: border-width alone shows nothing — must include border-style */
+    border: 1px solid transparent;
   }
 
   @media (min-width: 640px) {
@@ -55,16 +55,26 @@
 }
 
 @layer utilities {
+  /* .padding sets all four sides — shorthand is fine here since that's the intent */
   .padding {
-    padding: 3rem 2rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
+  /* FIX: was `padding: 0 2rem` which also forced top & bottom to 0,
+     breaking any vertical padding used alongside this class */
   .padding-x {
-    padding: 0 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
+  /* FIX: was `padding: 3rem 0` which also forced left & right to 0,
+     breaking any horizontal padding used alongside this class */
   .padding-y {
-    padding: 3rem 0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .padding-l {
@@ -92,15 +102,20 @@
 
   @media (min-width: 640px) {
     .padding {
-      padding: 6rem 4rem;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
 
     .padding-x {
-      padding: 0 4rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
 
     .padding-y {
-      padding: 6rem 0;
+      padding-top: 6rem;
+      padding-bottom: 6rem;
     }
 
     .padding-l {
