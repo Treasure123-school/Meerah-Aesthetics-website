@@ -27,13 +27,13 @@ const Hero = () => {
 					max-sm:leading-[82px] font-bold"
 				>
 					<span
-						className="xl:bg-white xl:whitespace-nowrap relative z-10
-						pr-10"
+						className="leading-none xl:bg-white xl:whitespace-nowrap 
+						relative z-10 pr-10"
 					>
 						The New Arrival
 					</span>
 					<br />
-					<span className="text-coral-red inline-block mt-3">
+					<span className="text-coral-red inline-block mt-5">
 						Nike
 					</span> Shoes
 				</h1>

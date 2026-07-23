@@ -60,7 +60,7 @@
 }
 
 @utility bg-card {
-	background-image: url("./assets/images/thumbnail-background.svg")
+	background-image: url("./assets/images/thumbnail-background.svg");
 }
 
 @layer utilities {
