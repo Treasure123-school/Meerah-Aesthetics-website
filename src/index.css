@@ -59,6 +59,10 @@
 	background-image: url("./assets/images/collection-background.svg");
 }
 
+@utility bg-card {
+	background-image: url("./assets/images/thumbnail-background.svg")
+}
+
 @layer utilities {
 	.padding {
 		padding-top: 3rem;
