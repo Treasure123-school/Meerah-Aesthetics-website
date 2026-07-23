@@ -34,7 +34,6 @@
     color: var(--color-slate-gray);
     padding-left: 1.25rem;
     outline: none;
-    /* FIX: border-width alone shows nothing — must include border-style */
     border: 1px solid transparent;
   }
 
