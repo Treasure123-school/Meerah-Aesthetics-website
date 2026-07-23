@@ -54,7 +54,6 @@
 }
 
 @layer utilities {
-  /* .padding sets all four sides — shorthand is fine here since that's the intent */
   .padding {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -62,15 +61,11 @@
     padding-right: 2rem;
   }
 
-  /* FIX: was `padding: 0 2rem` which also forced top & bottom to 0,
-     breaking any vertical padding used alongside this class */
   .padding-x {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  /* FIX: was `padding: 3rem 0` which also forced left & right to 0,
-     breaking any horizontal padding used alongside this class */
   .padding-y {
     padding-top: 3rem;
     padding-bottom: 3rem;
