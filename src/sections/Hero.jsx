@@ -16,7 +16,7 @@ const Hero = () => {
 		>
 			<div
 				className="relative xl:w-2/5 flex flex-col justify-center 
-				items-start w-full xl:padding-x max-xl:padding-x pt-28"
+				items-start w-full padding-x pt-28"
 			>
 				<p className="text-xl font-montserrat text-coral-red">
 					Our Summer collections
@@ -33,7 +33,9 @@ const Hero = () => {
 						The New Arrival
 					</span>
 					<br />
-					<span className="text-coral-red inline-block mt-3">Nike</span> Shoes
+					<span className="text-coral-red inline-block mt-3">
+						Nike
+					</span> Shoes
 				</h1>
 
 				<p
@@ -52,7 +54,9 @@ const Hero = () => {
 				>
 					{statistics.map((stat, index) => (
 						<div key={index}>
-							<p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+							<p className="text-4xl font-palanquin font-bold">
+								{stat.value}
+							</p>
 							<p className="leading-7 font-montserrat text-slate-gray">
 								{stat.label}
 							</p>

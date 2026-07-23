@@ -5,7 +5,7 @@ function App() {
   return (
     <main className="relative">
       <Nav />
-      <section className="xl:padding-l wide:padding-r padding-b bg-red-500">
+      <section className="xl:padding-l wide:padding-r padding-b">
         <Hero />
       </section>
 
